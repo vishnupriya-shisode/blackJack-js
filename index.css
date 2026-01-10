@@ -23,7 +23,7 @@ button {
     width: 150px;
     background: goldenrod;
     padding: 5px 0 5px 0; 
-    font-style: bold;
     border: 0;
     border-radius: 3px;
+    font-style: bold;
 }
