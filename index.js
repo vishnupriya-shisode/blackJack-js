@@ -1,6 +1,6 @@
 let firstCard = 10
 let secondCard = 4
-
+let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard 
 let hasBlackJack = false
 let isAlive = true
@@ -16,6 +16,7 @@ function startGame(){
 }
 function renderGame() {
     cardEL.textContent = "Card : " + firstCard + " " +  secondCard
+    cardEL.textContent = "Card : " + cards[0] + " " + cards[1]
      sumEL.textContent = "SUM : " + sum
 
     if (sum <= 20) {
