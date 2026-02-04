@@ -1,5 +1,5 @@
-let firstCard = 11
-let secondCard = 10
+let firstCard = 10
+let secondCard = 4
 
 let sum = firstCard + secondCard 
 let hasBlackJack = false
@@ -31,5 +31,9 @@ function startGame() {
 
 function newCard() {
     console.log("Draw a new Card?")
+
+    let card =  7
+    sum += card
+    startGame()
+
 }
-newCard()
