@@ -11,8 +11,10 @@ let sumEL = document.getElementById('sum-el')
 let messageEL = document.getElementById("message-el")
 console.log(messageEL)
 
-
-function startGame() {
+function startGame(){
+    renderGame()
+}
+function renderGame() {
     cardEL.textContent = "Card : " + firstCard + " " +  secondCard
      sumEL.textContent = "SUM : " + sum
 
@@ -34,6 +36,6 @@ function newCard() {
 
     let card =  7
     sum += card
-    startGame()
+    renderGame()
 
 }
