@@ -15,14 +15,14 @@ function startGame(){
     renderGame()
 }
 function renderGame() {
-    cardEL.textContent = "Card : " + firstCard + " " +  secondCard
+    //cardEL.textContent = "Card : " + firstCard + " " +  secondCard
     cardEL.textContent = "Card : " + cards[0] + " " + cards[1]
      sumEL.textContent = "SUM : " + sum
 
     if (sum <= 20) {
         message = "do you want to draw another card"
     } else if ( sum === 21) {
-    message = "Woohoo!! You've got the Blackjack"
+        message = "Woohoo!! You've got the Blackjack"
         hasBlackJack = true
     }else{
         message = "You're out of the game"
@@ -37,6 +37,8 @@ function newCard() {
 
     let card =  7
     sum += card
+    cards.push(card)
+    console.log(cards)
     renderGame()
 
 }
