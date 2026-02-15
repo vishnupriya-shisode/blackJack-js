@@ -11,6 +11,8 @@ let sumEL = document.getElementById('sum-el')
 let messageEL = document.getElementById("message-el")
 console.log(messageEL)
 
+console.log(cards)
+
 function getRandomCard() {
    
     let randomCard = Math.floor( Math.random()*13 ) + 1
@@ -24,7 +26,15 @@ function getRandomCard() {
 }
 
 function startGame(){
+    isAlive = true
+   
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+   
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
     renderGame()
+
 }
 function renderGame() { 
     //cardEL.textContent = "Card : " + firstCard + " " +  secondCard
