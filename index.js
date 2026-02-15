@@ -14,9 +14,12 @@ console.log(messageEL)
 function startGame(){
     renderGame()
 }
-function renderGame() {
+function renderGame() { 
     //cardEL.textContent = "Card : " + firstCard + " " +  secondCard
-    cardEL.textContent = "Card : " + cards[0] + " " + cards[1]
+    cardEL.textContent = "Card : " 
+    for (let i = 0; i < cards.length; i++){
+        cardEL.textContent += cards[i] + " " 
+    }
      sumEL.textContent = "SUM : " + sum
 
     if (sum <= 20) {
